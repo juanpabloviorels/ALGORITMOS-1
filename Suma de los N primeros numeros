@@ -1,0 +1,26 @@
+// Suma de los N primeros numeros.cpp
+//
+
+#include "stdafx.h"
+#include <iostream> 
+#include "conio.h" 
+
+using namespace std; 
+
+void main()
+{ int N,S=0,i=0,cont; 
+  
+  cout<<"Ingrese la cantidad de numeros impares que quiere sumar: " ;
+  cin>>N; 
+  cont=1;
+  
+  for(i=1;i<=N;i++)
+
+  { S=S+cont;
+    cont=cont+2;
+  }
+  cout<<"La suma es:";
+  cout<<S;
+
+  getch();
+}
