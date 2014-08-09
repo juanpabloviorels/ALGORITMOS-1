@@ -1,0 +1,26 @@
+// Suma hasta N.cpp : Suma los numeros imapres hasta N
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+
+using namespace std; 
+
+void main()
+{ int N,S=0,i=1 ;
+
+cout<< "Ingrese el numero N: "; 
+cin>>N;
+
+for(i=1;i<=N;i=i+2)
+{ S=S+i;
+}
+
+cout<< "La Suma es igual a: ";
+cout<<S;
+
+ getch(); 
+
+}
