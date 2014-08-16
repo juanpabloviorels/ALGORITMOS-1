@@ -1,0 +1,53 @@
+/* Programa: Menu 
+   Nombre: Juan Pablo Viorels 
+   Fecha:16/08/14
+   Algoritmos 1 
+*/
+
+#include "stdafx.h"
+
+#include <iostream> 
+#include "stdlib.h"
+#include "conio.h"
+using namespace std;
+
+void main() 
+{ int N,i,S,cont; 
+  char opc;
+  system("color 70"); 
+
+  do
+  { cout<< "\t\t\t MENU";
+   cout<< "\n\n 1.- Suma de pares hasta N \n\n 2.- Suma de los primeros N pares \n\n 3.-Suma de los primeros pares con while \n\n 0.- Salir";  
+   cin>> opc; 
+   switch(opc)
+   { case '1': 
+       cout<<"Ingrese el numero N"; 
+	   cin>>N;
+       S=0;
+	   i=2;
+        for(i=2;i<=N;i=i+2)
+        { S=S+i; 
+		}
+		cout<<"La suma de los numeros es: ";
+        cout<<S;
+		break; 
+      
+   case '2': 
+      cout<< "Ingrese la cantidad de numeros pares a sumar"; 
+	  cin>>N; 
+	  S=0; 
+	  cont=2;
+
+        for(i=0;i<=N;i++)
+          { S=S+cont;
+           cont=cont+2;
+          }
+       cout<<"La suma es:";
+       cout<<S;
+   
+    } ;
+     
+  }  
+  while (opc!=0); 
+  } 
